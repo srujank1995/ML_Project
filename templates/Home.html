@@ -97,6 +97,29 @@
         font-size: 0.85rem;
         color: #64748b;
       }
+      .btn-secondary-outline {
+        background: transparent;
+        color: #1e40af;
+        font-weight: 600;
+        font-size: 0.95rem;
+        padding: 12px 24px;
+        border: 2px solid #c7d2fe;
+        border-radius: 12px;
+        transition: all 0.25s ease;
+      }
+
+      .btn-secondary-outline:hover {
+        background: #eef2ff;
+        border-color: #1e40af;
+        color: #1e40af;
+        transform: translateY(-2px);
+      }
+
+      .btn-cta:focus,
+      .btn-secondary-outline:focus {
+        outline: none;
+        box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.3);
+      }
     </style>
   </head>
   <body>
@@ -104,6 +127,11 @@
       <div class="card-header">
         <h1>Student Exam Performance Indicator</h1>
         <p>Machine Learning Based Maths Score Prediction</p>
+      </div>
+      <div class="text-center mt-4">
+        <a href="{{ url_for('index') }}" class="btn btn-secondary-outline">
+          ← Back to Home
+        </a>
       </div>
 
       <div class="card-body p-4">
